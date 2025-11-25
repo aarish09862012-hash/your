@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animity – Hindi Dubbed Anime</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #0b0f19;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #eee;
+    }
+
+    header {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo{
+        font-size: 28px;
+        font-weight: bold;
+        color: #ff3b6b;
+    }
+
+    .search-box input{
+        width: 330px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background: #121826;
+        color: #fff;
+    }
+
+    .hero {
+        height: 420px;
+        /* Replace the placeholder image URL with your actual hero image */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.2), #0b0f19),
+            url('image.tmdb.org') center/cover no-repeat;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .hero h1 { font-size: 42px; margin: 0; }
+    .hero p { width: 55%; color: #ccc; }
+
+    .btn {
+        padding: 10px 18px;
+        background: #ff3b6b;
+        color: #fff;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 12px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    section{
+        padding: 30px;
+    }
+
+    h2 { margin-bottom: 14px; }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+        gap: 14px;
+    }
+
+    .card{
+        background: #121826;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .2s;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .card:hover{
+        transform: translateY(-5px);
+    }
+
+    /* Updated CSS for the <img> tag used as a thumbnail */
+    .thumb{
+        height: 220px;
+        width: 100%;
+        object-fit: cover; /* Ensures the image covers the area without distortion */
+        display: block;
+    }
+
+    .card-title{
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ANIMITY</div>
+
+    <!-- Updated header with a form for search functionality -->
+    <form class="search-box" id="searchForm" action="search.html" method="get">
+        <input type="text" name="query" placeholder="Search Anime..." required>
+    </form>
+</header>
+
+<!-- HERO / FEATURED -->
+<div class="hero">
+    <h1>Top Hindi Dubbed Anime</h1>
+    <p>top best Hindi Dubbed Anime watch — Action, Adventure, Fantasy.wesite is in process </p>
+    <a class="btn" href="#">Watch Now</a>
+</div>
+
+<!-- TOP 10 HINDI DUBBED -->
+<section>
+    <h2>ANIMITY anime</h2>
+
+    <div class="grid">
+        <!-- Updated cards with <img> tags and placeholder URLs -->
+        <a class="card" href="aot.html">
+            <img class="thumb" src="aot.jpeg" alt="Attack on Titan Poster">
+            <div class="card-title">Attack on Titan (Hindi)</div>
+        </a>
+
+        <a class="card" href="naruto.html">
+            <img class="thumb" src="naruto.jpeg" alt="Naruto Poster">
+            <div class="card-title">Naruto classic (Hindi)</div>
+        </a>
+
+        <a class="card" href="demonslayer.html">
+            <img class="thumb" src="demonslayer.jpeg" alt="Demon Slayer Poster">
+            <div class="card-title">Demon Slayer (Hindi)</div>
+        </a>
+
+        <a class="card" href="jjk.html">
+            <img class="thumb" src="image.tmdb.org" alt="Jujutsu Kaisen Poster">
+            <div class="card-title">Jujutsu Kaisen (Hindi)</div>
+        </a>
+
+        <a class="card" href="deathnote.html">
+            <img class="thumb" src="image.tmdb.org" alt="Death Note Poster">
+            <div class="card-title">Death Note (Hindi)</div>
+        </a>
+
+        <a class="card" href="yourname.html">
+            <img class="thumb" src="image.tmdb.org" alt="Your Name Poster">
+            <div class="card-title">Your Name (Hindi)</div>
+        </a>
+
+        <a class="card" href="chainsawman.html">
+            <img class="thumb" src="image.tmdb.org" alt="Chainsaw Man Poster">
+            <div class="card-title">Chainsaw Man (Hindi)</div>
+        </a>
+
+        <a class="card" href="dbs.html">
+            <img class="thumb" src="image.tmdb.org" alt="Dragon Ball Super Poster">
+            <div class="card-title">Dragon Ball Super (Hindi)</div>
+        </a>
+
+        <a class="card" href="bleach.html">
+            <img class="thumb" src="image.tmdb.org" alt="Bleach Poster">
+            <div class="card-title">Bleach (Hindi)</div>
+        </a>
+    </div>
+</section>
+
+</body>
+</html>
